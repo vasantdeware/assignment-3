@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flexbox</title>
+  <style>
+    .container{
+      height: 500px;
+      width: 60%;
+      border: 2px solid black;
+      display: flex;
+      /* flex property for flex container */
+      /* flex-direction: row-reverse; */
+      /* flex-direction: row; */
+      /* flex-wrap: wrapj; */
+      justify-content: center;
+
+      
+    }
+    .item{
+      width: 100px;
+      height: 200px;
+      border: 2px solid chocolate;
+      background-color:  rgb(199, 224, 199);
+      margin: 10px;
+      padding: 3px;
+
+    }
+  </style>
+</head>
+<body>
+  <h1>this is flexbox</h1>
+  <div class="container">
+    <div class="item" id="item1">box1 vasant </div>
+    <div class="item" id="item2">box 2</div>
+    <div class="item" id="item3">box3 </div>
+    <div class="item" id="item4">box4 </div>
+    <div class="item" id="item15">box5 </div>
+  </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flexbox</title>
+  <style>
+    body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: red;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: rgb(46, 39, 148);
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: white;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+    .container{
+      height: 500px;
+      width: 90%;
+      
+      display: flex;
+      /* flex property for flex container */
+      /* flex-direction: row-reverse; */
+      /* flex-direction: row; */
+      /* flex-wrap: wrapj; */
+      justify-content: center;
+
+      
+    }
+ 
+    .item{
+      width: 300px;
+      height: 300px;
+      border: 2px solid chocolate;
+      background-color:  rgb(188, 211, 104);
+      margin: 10px;
+      padding: 3px;
+
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="mobile-container">
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="#home" class="active">Logo</a>
+      <div id="myLinks">
+        <a href="#news">chicken</a>
+        <a href="#contact">beef</a>
+        <a href="#about">Sushi</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  
+  <h1> our menu </h1>
+  <div class="container">
+    <div class="item" id="item1">
+      <h3>chicken</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit quia quos, error ab magni voluptatem,  </div>
+    <div class="item" id="item2"><h3>beef </h3>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi inventore, placeat laboriosam quia voluptate dolore?</div>
+    <div class="item" id="item3"><h3>sushi</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat illo fugiat ipsum molestiae vitae beatae! </div>
+   
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
+      
+</body>
+</html>
